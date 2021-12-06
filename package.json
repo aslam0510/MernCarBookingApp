@@ -9,9 +9,9 @@
   },
   "scripts": {
     "frontend-install" : "npm install --prefix frontend",
-    "server" : "nodemon backend/server.js",
+    "server" : "nodemon server.js",
     "frontend" : "npm start --prefix frontend",
-    "start" : "node backend/server.js",
+    "start" : "node server.js",
     "dev" : "concurrently \npm run server\" \"npm run frontend\"",
     "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
