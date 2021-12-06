@@ -3,11 +3,14 @@ import {Row, Col, Form, Input, FormItem} from 'antd';
 import { NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { userRegister } from '../redux/actions/userAction';
-
+import { message } from 'antd';
 const Register = () => {
   const dispatch = useDispatch();
 
   const onFinish = (values) =>{
+    if(values.password !== values.cpassword){
+      return   message.success("Password doesn't match"); 
+    }
     dispatch(userRegister(values))
   }
   
