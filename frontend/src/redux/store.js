@@ -7,6 +7,7 @@ import { alertReducer } from './reducers/alertReducer';
 const composeEnhancers = composeWithDevTools({});
 
 const rootReducer = combineReducers({
+  
   carsSlice : carsReducer,
   alertSlice: alertReducer
 })
