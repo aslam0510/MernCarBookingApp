@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Car Booking App Backend",
+  "main": "server.js",
+  "engines": {
+    "node": "14.15.4",
+    "npm" : "7.19.1"
+  },
+  "scripts": {
+    "frontend-install" : "npm install --prefix frontend",
+    "server" : "nodemon server.js",
+    "frontend" : "npm start --prefix frontend",
+    "start" : "node server.js",
+    "dev" : "concurrently \npm run server\" \"npm run frontend\"",
+    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Aslam khan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14",
+    "nodemon": "^2.0.15",
+    "stripe": "^8.191.0",
+    "uuid": "^8.3.2"
+  }
+}

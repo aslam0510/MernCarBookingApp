@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap');
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+   font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: azure !important;
+  /* width: 100% !important; */
+}
+
+code {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bs1{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+h1{
+  font-size: 25px;
+  font-weight: bold;
+  color: orangered !important;
+}
+
+.header{
+  width: 100% !important;
+  padding: 10px;
+}
+
+.content{
+  min-height: 83vh !important;
+  width: 99% !important;
+}
+
+.carImg{
+  height: 180px;
+  width: 300px;
+  border-radius: 10px;
+}
+p{
+  margin: 5px !important;
+  /* text-align: left; */
+  padding: 0px;
+}
+
+.btn1{
+  box-shadow: none !important;
+  background-color: white;
+  color: orangered;
+  border : 2px solid orangered !important;
+  border-radius: 8px !important;
+  padding: 5px 15px ;
+}
+
+.btn1:hover{
+  background-color: orangered !important;
+  color: white !important;
+  border : 2px solid white!important;
+}
+
+.spinner{
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  z-index: 1;
+}
+
+.login{
+color: white;
+ padding-top: 2rem;
+}
+
+.login label, .login h1{
+  color: white !important;
+  padding: 5px
+}
+
+.login-form{
+  padding: 20px 30px !important;
+  background-color: #1f1f1f;
+}
+
+.span-tag{
+  margin-right: 10px;
+}
+
+.car{
+  margin:0px;
+  padding-top: 2rem;
+  padding-left : 2px;
+}
+
+
