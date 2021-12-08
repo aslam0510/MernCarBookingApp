@@ -26,13 +26,13 @@ export const userRegister = (data) => async (dispatch) =>{
   dispatch({ type: 'LOADING', payload: true });
   try {
     const response = await axios.post(globalAPI.userRegister, data);
-    message.success(response.data.message);   
+    message.success('logged in successfully');   
     setTimeout(()=>{
       window.location.href="/login"
     },500)
   } catch (err) {
     const error = {...err}
-    message.error(error.response.data.message)
+    message.error('invalid credentials')
   } finally {
     dispatch({ type: 'LOADING', payload: false });
   }

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+require('dotenv').config({path : './config.env'});
 
 function connectDB(){
   // for mongodb compass

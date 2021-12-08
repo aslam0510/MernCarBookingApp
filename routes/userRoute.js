@@ -14,6 +14,7 @@ router.post('/login', async (req,res) =>{
         return res.status(400).json({message : 'Invalid Credentials'})
       }
     } catch (error) {
+      console.log(error);
       return res.status(400).json(error)
     }
 })
@@ -30,6 +31,7 @@ router.post('/register', async (req,res) =>{
     await newUser.save();
     res.send({message:'User registered successfully'})
   } catch (error) {
+    console.log(erro);
     return res.status(400).json(error)
   }
 })
