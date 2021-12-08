@@ -1,5 +1,6 @@
-
-const BASE_URL = 'http://localhost:5000';
+require('dotenv').config({path : './config.env'});
+const url = process.env.PORT
+const BASE_URL = `http://localhost:${url}`;
 
 const globalAPI = {
   getAllCars : `${BASE_URL}/api/cars/getAllCars`,
