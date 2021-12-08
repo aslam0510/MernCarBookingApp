@@ -1,5 +1,4 @@
-require('dotenv').config({path : './config.env'});
-const BASE_URL = process.env.BASE_URL || 'http://localhost:5000';
+const BASE_URL =  '';
 
 const globalAPI = {
   getAllCars : `${BASE_URL}/api/cars/getAllCars`,
